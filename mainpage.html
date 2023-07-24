@@ -84,6 +84,26 @@
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
     }
+
+    .carousel-inner{
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      width: 1280px;
+
+    }
+
+    .boxdrop{
+      background-color: black;
+      color: white;
+      padding: 30px;
+    }
+
   </style>
 </head>
 
@@ -140,85 +160,54 @@
       </div>
     </section>
 
-    <div class="album py-5 bg-primary">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm" width="100%">
-              <img src="/images/whale01.jpg" class="card-img-top" alt="고래1">
-              <div class="card-body">
-                <h5 class="card-title">기획서1</h5>
-                <p class="card-text">블라브라~ 기획서1의 내용을 간략하게 적으세요.</p>
-                <a href="/pages/page01.html" class="btn btn-warning">문서보기</a>
-                <a href="/pages/page01.html" class="btn btn-warning">노션보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm" width="100%">
-              <img src="/images/whale02.jpg" class="card-img-top" alt="고래2">
-              <div class="card-body">
-                <h5 class="card-title">기획서2</h5>
-                <p class="card-text">블라블라~ 기획서2의 내용을 간략하게 적으세요.</p>
-                <a href="/pages/page02.html" class="btn btn-warning">문서보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm" width="100%">
-              <img src="/images/whale03.jpg" class="card-img-top" alt="고래3">
-              <div class="card-body">
-                <h5 class="card-title">기획서3</h5>
-                <p class="card-text">블라블라~ 기획서3의 내용을 간략하게 적으세요.</p>
-                <a href="/pages/page03.html" class="btn btn-warning">문서보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm" width="100%">
-              <img src="/images/whale04.jpg" class="card-img-top" alt="고래4">
-              <div class="card-body">
-                <h5 class="card-title">기획서4</h5>
-                <p class="card-text">블라블라~ 기획서4의 내용을 간략하게 적으세요.</p>
-                <a href="/pages/page04.html" class="btn btn-success">문서보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm" width="100%">
-              <img src="/images/whale05.jpg" class="card-img-top" alt="고래5">
-              <div class="card-body">
-                <h5 class="card-title">기획서5</h5>
-                <p class="card-text">블라블라~ 기획서5의 내용을 간략하게 적으세요.</p>
-                <a href="/pages/page05.html" class="btn btn-success">문서보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm" width="100%">
-              <img src="/images/whale06.jpg" class="card-img-top" alt="고래6">
-              <div class="card-body">
-                <h5 class="card-title">기획서6</h5>
-                <p class="card-text">블라블라~ 기획서6의 내용을 간략하게 적으세요.</p>
-                <a href="/pages/page06.html" class="btn btn-success">문서보기</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="/pages/page01.html"><img src="/images/whale01.jpg" class="d-block w-100" alt="..."></a>
     </div>
+    <div class="carousel-item">
+      <a href="/pages/page02.html"><img src="/images/whale02.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a href="/pages/page03.html"><img src="/images/whale03.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a href="/pages/page04.html"><img src="/images/whale04.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a href="/pages/page05.html"><img src="/images/whale05.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a href="/pages/page06.html"><img src="/images/whale06.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-  </main>
+ 
 
   <footer class="text-muted py-5">
-    <div class="container">
+    <div class="boxdrop">
       <p class="float-end mb-1">
         <a href="/index.html">Back to HOME</a>
       </p>
-      <p class="mb-1">자신이 공부하는 분야와 기획포지션에 대해서 적으세요.</p>
-      <p class="mb-0">자신이 공부한 것을 입증할 수 있는 학교, 학원 등을 링크하세요. <a href="https://atentsgame.com">아텐츠게임아카데미</a> </p>
+      <p class="mb-1">고찬희</p>
+      <p class="mb-0">010-2182-0521 cksl0522@gmail.com </p>
     </div>
   </footer>
+  
+</main>
 
 </html>
